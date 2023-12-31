@@ -1,0 +1,36 @@
+/* Styles for custom cards */
+.custom-card {
+    /* Sets a width of 70% for elements with the class .custom-card */
+    width: 70%;
+    /* Centers elements horizontally */
+    margin: 0 auto;
+}
+
+/* Styles for buttons inside elements with the class .card-body */
+.card-body .btn {
+    /* Full width for buttons */
+    width: 100%;
+    /* 10px top margin */
+    margin-top: 10px;
+}
+
+/* Effects when hovering over elements with the class .card */
+.card:hover {
+    /* Scales up to 105% */
+    transform: scale(1.05);
+    /* Adds a box shadow to highlight the element */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Specific styles for screens up to 768px wide */
+@media (max-width: 768px) {
+    /* Changes the width of .custom-card to 90% on smaller screens */
+    .custom-card {
+        width: 90%;
+    }
+
+    /* Adds a 20px bottom margin to elements with the class .card */
+    .card {
+        margin-bottom: 20px;
+    }
+}
